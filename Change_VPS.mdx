@@ -189,7 +189,7 @@ sudo systemctl restart ogd && sudo journalctl -u ogd -f -o cat
 ```bash
 evmosd status | jq .SyncInfo
 ```
-### 20. Copy file: priv_validator_state.json từ VPS cũ qua VPS mới (Đứng tại VPS cũ):
+### 20. Copy file: priv_validator_key.json từ VPS cũ qua VPS mới (Đứng tại VPS cũ):
 **Lưu ý quan trọng:* Trước khi copy key phải chắc chắn đã dừng node bên VPS cũ
 
 ```bash
