@@ -181,6 +181,10 @@ evmosd tendermint unsafe-reset-all --home $HOME/.evmosd --keep-addr-book
 ```bash
 lz4 -d -c ./latest_snapshot.tar.lz4 | tar -xf - -C $HOME/.evmosd
 ```
+#### Replace with the backed-up priv_validator_state.json
+```
+mv $HOME/.initia/priv_validator_state.json.backup $HOME/.initia/data/priv_validator_state.json
+```
 ### 18. Restart the node và chờ node sync xong đầy đủ:
 ```bash
 sudo systemctl restart ogd && sudo journalctl -u ogd -f -o cat
